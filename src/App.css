@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.backImg {
+  background: url(/src/images/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg) no-repeat center/cover;
+}
+.backImg3 {
+  background: url(/src/images/tamarcus-brown-T3uKisfmABY-unsplash.jpg) no-repeat center/cover;
+}

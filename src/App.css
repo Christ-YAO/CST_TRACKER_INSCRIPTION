@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
 body {
   padding: 0;
   margin: 0;
@@ -6,6 +8,37 @@ body {
 .backImg {
   background: url(/src/images/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg) no-repeat center/cover;
 }
-.backImg3 {
+.backImg2 {
   background: url(/src/images/tamarcus-brown-T3uKisfmABY-unsplash.jpg) no-repeat center/cover;
+}
+
+.footer ul li{
+  list-style-type: none;
+  margin-left: -40px;
+  margin-top: 8px !important;
+  font-size: 17px;
+  position: relative;
+}
+.footer ul li::before {
+  content: ">";
+  color: transparent;
+  font-weight: bold;
+  position: absolute;
+  left: -25px;
+  top: 0%;
+  transition: all 0.3s ease-in-out;
+}
+.footer ul li:hover::before {
+  left: -17px;
+  color: #f8f8ff;
+}
+
+.footer ul li a{
+  text-decoration: none;
+  color: #c9c9c9;
+  font-family: sans-serif;
+}
+
+.footer ul li a:hover {
+  color: #f8f8ff;
 }

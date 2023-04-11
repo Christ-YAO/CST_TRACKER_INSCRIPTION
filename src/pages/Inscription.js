@@ -60,28 +60,33 @@ function Inscription() {
 
 
     return (
-        <Box className="backImg" bgcolor='#f8f8ff' padding='120px 0px 50px 0px' width='100%' minHeight='100vh' marginTop='-70px !important' margin="0 auto">
-          <Logo />
-        <Typography variant='h1' color='#ff5722' fontWeight='bolder' ml="75px" mt="30px">S'Inscrire</Typography>
+        <Box sx={{position: "relative",}}>
+          <Box className="backImg" width='100%' minHeight='100%' marginTop='0px !important' margin="0 auto" sx={{position: "absolute", zIndex: "-1", filter: "brightness(50%)"}}></Box>
+          <Box padding='120px 0px 50px 0px' width='100%' minHeight='100%' marginTop='-70px !important' margin="0 auto">
+          <Box sx={{ml: 10, mt: '-10px', bgcolor: '#a53816', p: '30px 10px', width: 100, borderRadius: '0px 45% 45% 45%'}}>
+            <Logo />
+          </Box>
+        <Typography variant='h1' color='#f8f8ff' fontWeight='bolder' ml="75px" mt="30px">S'Inscrire</Typography>
         <Typewriter />
         <Box 
             sx={{
                 display: 'flex', 
                 flexWrap: 'wrap', 
                 gap: 1, 
-                width: {xl: '40%', md: '55%', sm: "70%", xs: "78%"},
+                width: {xl: '40%', md: '55%', sm: "75%", xs: "85%"},
                 padding: {xl: '30px', lg: '30px', md: '30px', sm: '20px', xs: '20px'}, 
                 border: '1px solid #ff5722', 
                 borderRadius: 2, 
                 position: 'relative', 
                 marginBottom: 5,
-                background: "#fffd",
+                background: "#fffa",
+                backdropFilter: 'blur(50px)',
                 ml:{xl: 20, lg: 20, md: 10, sm: 5, xs: 2.5}
             }}>
           <Box sx={{
                     width: '100%', 
                     textAlign: 'center', 
-                    background: '#ff5622e8', 
+                    background: '#a53816', 
                     p: '15px', 
                     color: '#fff',
                     mb: 3,
@@ -166,6 +171,7 @@ function Inscription() {
             </Box>
         </Box>
       </Box>
+        </Box>
     )
 }
 

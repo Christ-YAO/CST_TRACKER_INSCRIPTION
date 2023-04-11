@@ -15,12 +15,12 @@ export default function Logo(){
             fontSize: 40,
             fontWeight: 700,
             color: '#f8f8ff',
-            background: "#ff5722",
+            // background: "#ff5722",
             textDecoration: 'none',
             letterSpacing: 1,
-            ml: 10,
-            p: "30px 10px",
-            borderRadius: "0% 50%"
+            // ml: 10,
+            // p: "30px 10px",
+            // borderRadius: "0% 50%"
         }}
     >
         iSwift
